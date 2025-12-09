@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+  <h2>Booking Confirmed</h2>
+  <div class="ticket">
+    <p><strong>Booking ID:</strong> {{ booking[0] }}</p>
+    <p><strong>Passenger:</strong> {{ booking[3] }} (Age: {{ booking[4] }})</p>
+    <p><strong>Seat No:</strong> {{ booking[5] }}</p>
+    <hr>
+    <p><strong>Flight:</strong> {{ flight[1] }} — {{ flight[2] }} → {{ flight[3] }}</p>
+    <p><strong>Date / Time:</strong> {{ flight[4] }} {{ flight[5] }}</p>
+    <p><strong>Price:</strong> ₹{{ flight[7] }}</p>
+  </div>
+{% endblock %}
